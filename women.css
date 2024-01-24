@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  nav{
+    background-image: linear-gradient(rgb(233, 196, 196),rgb(174, 174, 189),rgb(177, 161, 161));
+    height: 80px;
+    width: 100%;
+    font-weight: bold;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+  }
+  nav ul{
+    float:right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background-color: rgba(151, 244, 12, 0.548);
+    transition: .5s;
+  }
+  .checkbtn{
+    color: white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width:950px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width:850px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      width: 100%;
+      position: fixed;
+      height: 100vh;
+      background-color: rgb(235, 183, 235);
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+      color: brown;
+    }
+    a.active,a:hover{
+      background: none;
+      color: darkgreen;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+
+/* seperate track */
+
+
+/* 1   */
+.main-head-of-products{
+    color:black;
+    padding-top:100px;
+    text-align: center;
+  }
+  .colored-word-bigger-size{
+    color:#f84258;
+    font-size:35px;
+  }
+
+  /* 1 end */
+/* 2 */
+  .bg-images{
+    text-align: center;
+    background-color: #f3f3f3;
+  }
+  .bg-images img{
+    width:800px;
+    object-fit: cover;
+  }
+  /* 2 end */
+ 
+  .products-hr{
+    border: 1px solid black;
+    width:100%;
+  }
+
+  /* 4 start images */
+  .kurti, .western, .heels, .g-shoes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-left:50px;
+    
+  }
+  @media screen and (max-width:974px){
+    .kurti, .western, .heels, .g-shoes{
+      padding-left:20px;
+      padding-right:20px;
+    }
+  }
+
+  img{
+    cursor: pointer;
+  }
+/* 4 end */
+
+/* 3 */
+  .colored-word{
+    color:#f84258;
+  }
+
+  .products-hr{
+    border: 1px dotted black;
+    width:100%;
+  }
+
+  h1{
+    text-align: center;
+ }
+  /* 3 end */
